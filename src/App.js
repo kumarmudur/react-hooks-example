@@ -5,11 +5,13 @@ import './App.css';
 
 // Hooks 
 import Counter from './components/hooks/Counter';
+import Counter2 from './components/hooks/Counter2';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
+      <Counter2 />
     </div>
   );
 }
