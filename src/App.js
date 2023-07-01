@@ -10,6 +10,7 @@ import Counter3 from './components/hooks/useState/Counter3';
 import Counter4 from './components/hooks/useState/Counter4';
 
 import Counter1 from './components/hooks/useEffect/Counter1';
+import IntervalCounter from './components/hooks/useEffect/IntervalCounter';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <Counter2 /> */}
       {/* <Counter3 /> */}
       {/* <Counter4 /> */}
-      <Counter1 />
+      {/* <Counter1 /> */}
+      <IntervalCounter />
     </div>
   );
 }
