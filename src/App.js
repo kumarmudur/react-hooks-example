@@ -11,6 +11,7 @@ import Counter4 from './components/hooks/useState/Counter4';
 
 import Counter1 from './components/hooks/useEffect/Counter1';
 import IntervalCounter from './components/hooks/useEffect/IntervalCounter';
+import DataFetching from './components/hooks/useEffect/DataFetching';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <Counter3 /> */}
       {/* <Counter4 /> */}
       {/* <Counter1 /> */}
-      <IntervalCounter />
+      {/* <IntervalCounter /> */}
+      <DataFetching />
     </div>
   );
 }
