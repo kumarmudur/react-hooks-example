@@ -1,3 +1,4 @@
+import { createContext } from 'react';
 import './App.css';
 
 // Classes
@@ -13,6 +14,11 @@ import Counter1 from './components/hooks/useEffect/Counter1';
 import IntervalCounter from './components/hooks/useEffect/IntervalCounter';
 import DataFetching from './components/hooks/useEffect/DataFetching';
 
+// context
+import ComponentC from './components/hooks/useContext/ComponentC';
+
+export const UserContext = createContext();
+
 function App() {
   return (
     <div className="App">
@@ -22,7 +28,10 @@ function App() {
       {/* <Counter4 /> */}
       {/* <Counter1 /> */}
       {/* <IntervalCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <UserContext.Provider value={'Shiva'}>
+        <ComponentC />
+      </UserContext.Provider>
     </div>
   );
 }
