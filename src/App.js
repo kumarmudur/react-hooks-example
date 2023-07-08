@@ -18,6 +18,7 @@ import DataFetching from './components/hooks/useEffect/DataFetching';
 import ComponentC from './components/hooks/useContext/ComponentC';
 
 export const UserContext = createContext();
+export const ChannelContext = createContext();
 
 function App() {
   return (
@@ -30,7 +31,9 @@ function App() {
       {/* <IntervalCounter /> */}
       {/* <DataFetching /> */}
       <UserContext.Provider value={'Shiva'}>
-        <ComponentC />
+        <ChannelContext.Provider value={'Codevolution'}>
+          <ComponentC />
+        </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
   );
