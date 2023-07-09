@@ -30,7 +30,7 @@ function App() {
       {/* <Counter1 /> */}
       {/* <IntervalCounter /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value={'Shiva'}>
+      <UserContext.Provider value={'Shiva Mahadeva'}>
         <ChannelContext.Provider value={'Codevolution'}>
           <ComponentC />
         </ChannelContext.Provider>
