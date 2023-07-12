@@ -1,5 +1,6 @@
-import { createContext } from 'react';
+import { createContext, lazy, Suspense } from 'react';
 import './App.css';
+
 
 // Classes
 // import Counter from './components/classes/Counter';
@@ -17,8 +18,13 @@ import DataFetching from './components/hooks/useEffect/DataFetching';
 // context
 import ComponentC from './components/hooks/useContext/ComponentC';
 
+import Test from './components/Test';
+
 export const UserContext = createContext();
 export const ChannelContext = createContext();
+
+const MyTest = lazy(() => import('./components/Test'));
+
 
 function App() {
   return (
@@ -30,11 +36,14 @@ function App() {
       {/* <Counter1 /> */}
       {/* <IntervalCounter /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value={'Shiva Mahadeva'}>
+      {/* <UserContext.Provider value={'Shiva Mahadeva'}>
         <ChannelContext.Provider value={'Codevolution'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <Suspense fallback={<div>Loading.....</div>}>
+      <MyTest></MyTest>
+      </Suspense>
     </div>
   );
 }
