@@ -20,6 +20,9 @@ import ComponentC from './components/hooks/useContext/ComponentC';
 
 import Test from './components/Test';
 
+// HOC
+import Component1 from './components/hoc/Component1';
+
 export const UserContext = createContext();
 export const ChannelContext = createContext();
 
@@ -41,9 +44,10 @@ function App() {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
-      <Suspense fallback={<div>Loading.....</div>}>
+      {/* <Suspense fallback={<div>Loading.....</div>}>
       <MyTest></MyTest>
-      </Suspense>
+      </Suspense> */}
+      <Component1 />
     </div>
   );
 }
