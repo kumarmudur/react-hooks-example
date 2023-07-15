@@ -8,7 +8,7 @@ import './App.css';
 // Hooks 
 import Counter from './components/hooks/useState/Counter';
 import Counter2 from './components/hooks/useState/Counter2';
-import Counter3 from './components/hooks/useState/Counter3';
+// import Counter3 from './components/hooks/useState/Counter3';
 import Counter4 from './components/hooks/useState/Counter4';
 
 import Counter1 from './components/hooks/useEffect/Counter1';
@@ -17,6 +17,9 @@ import DataFetching from './components/hooks/useEffect/DataFetching';
 
 // context
 import ComponentC from './components/hooks/useContext/ComponentC';
+
+// useReducer
+import Counter3 from './components/hooks/useReducer/Counter3';
 
 import Test from './components/Test';
 
@@ -51,7 +54,9 @@ function App() {
       <MyTest></MyTest>
       </Suspense> */}
       {/* <Component1 /> */}
-     <Parent />
+     {/* <Parent /> */}
+
+     <Counter3 />
     </div>
   );
 }
