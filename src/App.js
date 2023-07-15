@@ -23,6 +23,9 @@ import Test from './components/Test';
 // HOC
 import Component1 from './components/hoc/Component1';
 
+// Render Props
+import Parent from './components/renderProps/Parent';
+
 export const UserContext = createContext();
 export const ChannelContext = createContext();
 
@@ -47,7 +50,8 @@ function App() {
       {/* <Suspense fallback={<div>Loading.....</div>}>
       <MyTest></MyTest>
       </Suspense> */}
-      <Component1 />
+      {/* <Component1 /> */}
+     <Parent />
     </div>
   );
 }
