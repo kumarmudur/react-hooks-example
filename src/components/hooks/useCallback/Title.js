@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 const Title = () => {
     console.log('Rendering Title');
@@ -9,4 +9,4 @@ const Title = () => {
     );
 };
 
-export default Title;
+export default memo(Title);
