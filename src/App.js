@@ -21,6 +21,9 @@ import ComponentC from './components/hooks/useContext/ComponentC';
 // useReducer
 import Counter3 from './components/hooks/useReducer/Counter3';
 
+// useRef
+import FocusInput from './components/hooks/useRef/FocusInput';
+
 import Test from './components/Test';
 
 // HOC
@@ -56,7 +59,9 @@ function App() {
       {/* <Component1 /> */}
      {/* <Parent /> */}
 
-     <Counter3 />
+     {/* <Counter3 /> */}
+
+     <FocusInput />
     </div>
   );
 }
